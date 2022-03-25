@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery Practice W3schools Exercises</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        //jQuery Selectors
+        // Use the correct selector to hide all <p> elements. #1
+        $(document).ready(function () {
+            $("button").click(function () {
+                // $("p").hide();
+            });
+        });
+        //Use the correct selector to hide an element with id="test". #2
+        $(document).ready(function () {
+            $("button").click(function () {
+                // $("#test").hide();
+            });
+        });
+        //Use the correct selector to hide all elements with class="test". #3
+        $(document).ready(function () {
+            $("button").click(function () {
+                // $(".classTest").hide();
+            });
+        });
+        //Use the correct selector to hide all elements in the document. #4
+        $(document).ready(function () {
+            $("button").click(function () {
+                // $("*").hide();
+            });
+        });
+        //Use the correct selector to hide all elements with an href attribute. #5
+        $(document).ready(function () {
+            $("button").click(function () {
+                // $("[href]").hide();
+            });
+        });
+        //Use the correct selector to hide all odd table rows in a table. #6
+        $(document).ready(function () {
+            $("button").click(function () {
+                // $("tr:odd").hide();
+            });
+        });
+
+        //jQuery Events
+        //Use the correct event to hide all <p> elements with a "click". #1
+        $(document).ready(function () {
+            $("p").click(function () {
+                // $(this).hide();
+            });
+        });
+        //Use the correct event to hide all <p> elements with a "double-click". #2
+        $(document).ready(function () {
+            $("p").dblclick(function () {
+                // $(this).hide();
+            });
+        });
+        //When the mouse pointer enters a <p> element, it should be hidden. Use the correct event to do so. #3
+        $(document).ready(function () {
+            $("p").mouseenter(function () {
+                // $(this).hide();
+            });
+        });
+        //If you press a keyboard key inside an <input> element, it should be hidden. Use the correct event to do so. #4
+        $(document).ready(function () {
+            $("input").keypress(function () {
+                // $(this).hide();
+            });
+        });
+        //Use the on() method to attach a click event handler to all <p> elements. #5
+        $(document).ready(function () {
+            $("p").on("click", function () {
+                // $(this).hide();
+            });
+
+        });
+
+        //Hide/Show
+        //Use a jQuery method to hide a <p> element when it is clicked on. #1
+        $(document).ready(function () {
+            $("p").click(function () {
+                // $(this).hide();
+            });
+        });
+        //Use a jQuery method to hide a <p> element when it is clicked on. Note: The speed should be "slow". #2
+        $(document).ready(function () {
+            $("p").click(function () {
+                // $(this).hide("slow");
+            });
+        });
+        //Use a jQuery method to show a <p> element. #3
+        $(document).ready(function () {
+            $("#hide").click(function () {
+                // $(".hideShow").hide();
+                $("#show").click(function () {
+                    // $(".hideShow").show();
+                });
+            });
+        });
+        //Use a jQuery method to toggle between hiding and showing a <p> element. #4
+        $(document).ready(function () {
+            $("#toggle").click(function () {
+                // $(".toggle").toggle();
+            });
+        });
+
+        //Fade
+        //Use a jQuery method to fade out a <div> element. #1
+        $(document).ready(function () {
+            $("#fade").click(function () {
+                // $("#div1").fadeOut();
+            });
+        });
+        //Use a jQuery method to fade out a <div> element. Note: The duration of the effect should be "slow". #2
+        $(document).ready(function () {
+            $("#fade").click(function () {
+                // $("#div1").fadeOut("slow");
+            });
+        });
+        //Use a jQuery method to fade a <div> element to an opacity of "0.2". #3
+        $(document).ready(function () {
+            $("#fade").click(function () {
+                // $("#div1").fadeTo("slow", 0.2);
+            });
+        });
+        //Use a jQuery method to toggle between fading in and out a <div> element, when clicking on a button. Note: The duration of the effect should be 1000 milliseconds. #4
+        $(document).ready(function () {
+            $("#toggle").click(function () {
+                // $("#div1").fadeToggle(1000);
+            });
+        });
+
+        //Slide
+        //Use a jQuery method to slide up a <div> element. #1
+        $(function () {
+            $("#fade").click(function () {
+                // $("#div1").slideUp();
+            });
+        });
+        //Use a jQuery method to slide up a <div> element. Note: The duration of the effect should be "slow". #2
+        $(function () {
+            $("#fade").click(function () {
+                // $("#div1").slideUp("slow");
+            });
+        });
+        //Use a jQuery method to slide down a <div> element. #3
+        $(function () {
+            $("#slide").click(function () {
+                // $("#div2").slideDown();
+            });
+        });
+        //Use a jQuery method to toggle between sliding up and down a <div> element, when clicking on a button. #4
+        $(function () {
+            $("#slide").click(function () {
+                // $("#div2").slideToggle();
+            });
+        });
+
+        //Animate
+        //Use the animate() method to move a <div> element 250 pixels to the right. #1
+        $(function () {
+            $("#animate").click(function () {
+                // $("#div3").animate({right: '250px' });
+            });
+        });
+        //Use the animate() method to set the height of a <div> element to 500 pixels. #2
+        $(function () {
+            $("#animate").click(function () {
+                // $("#div3").animate({height: '500px'});
+            });
+        });
+        //Use the animate() method to set the following CSS properties for <div>: opacity: 0.4, height: 500px, width: 500px. #3
+        $(function () {
+            $("#animate").click(function () {
+                // $("#div3").animate({
+                //     opacity: "0.4",
+                //     height: "500px",
+                //     width: "500px"
+                // });
+            });
+        });
+        //Use the animate() method to set the font-size of a <div> element to 100 pixels: Note: The duration of the effect should be "slow". #4
+        $(function () {
+            $("#animate").click(function () {
+                // $("#animateText").animate({fontSize:"100px"},"slow");
+            });
+        });
+
+        //Stop
+        //Use a jQuery method to stop the animation effect of a <div> element. #1
+        $(function () {
+            $("#continue").click(function () {
+                // $("#divStop").slideDown(5000);
+            });
+            $("#stop").click(function () {
+                // $("#divStop").stop();
+            });
+        });
+
+        //Get
+
+        //Use a jQuery method to return the text content of a <div> element. #1
+        $(function () {
+            $("#get").click(function () {
+                // alert($("#getText").text());
+            });
+        });
+        //Use a jQuery method to return the HTML content of a <div> element. #2
+        $(function () {
+            $("#get").click(function () {
+                // alert($("#getText").html());
+            });
+        });
+        //Use a jQuery method to return the value of an input field. #3
+        $(function () {
+            $("#valBut").click(function () {
+                // alert($("#valTest").val());
+            });
+        });
+        //Use a jQuery method to return the URL address of a link. #4
+        $(function () {
+            $("#w3But").click(function () {
+                // alert($("#w3s").attr("href"));
+            })
+        })
+
+
+        //Set
+
+        //Use a jQuery method to change the text of a <div> element to "Hello World". #1
+        $(function () {
+            // $("#set").text("Hello world!!!");
+        });
+        //Use a jQuery method to change the value of an input field to "John Doe". #2
+        $(function () {
+            // $("#valTest").val("John Doe");
+        })
+        //Use a jQuery method to change the value of an image's src attribute to "myimage.jpg". #3
+        $(function () {
+            //$("#setImg").attr("src", "https://media.istockphoto.com/photos/pumpkins-in-graveyard-in-the-spooky-night-halloween-backdrop-picture-id1269139174?b=1&k=20&m=1269139174&s=170667a&w=0&h=gw64nrPFrtO05evw6jho5lcgWXNu4Xj_aoWTefqWCLc=");
+        })
+        //Use jQuery to change the text of a link to "Demo", and change the value of href's attribute value to "www.demo.com". #4
+        $(function () {
+            $("#setFour").click(function () {
+                // $("#w3s").text("demo");
+                // $("#w3s").attr("href", "www.demo.com");
+            });
+        });
+
+        //Add
+        //Use a jQuery method to insert the text "YES!" at the end of a <p> element.
+        $(function () {
+            // $("#addJS").append("YES!");
+        });
+        //Use a jQuery method to insert the text "YES!" at the beginning of a <p> element. #2
+        $(function () {
+            // $("#addJS").prepend("YES");
+        });
+
+        //Remove
+        //Use a jQuery method to remove a <div> element.
+        $(function () {
+            // $("#addJS").remove();
+        })
+        //Use a jQuery method to only remove the child elements of a <div> element.
+        $(function () {
+            // $("#removeCon").empty();
+        })
+        //Use a jQuery method to remove all <div> elements with class="test" and class="demo".
+        $(function () {
+            // $("div").remove("test1", "demo1");
+        })
+
+        //CSS Classes
+
+        //Use a jQuery method to add the "important" class to a <p> element. #1
+        $(function () {
+            // $("#cssClass").addClass("important");
+        })
+        //Use a jQuery method to add both the "important" and "test" class to a <p> element. #2
+        $(function () {
+            // $("#cssClass").addClass("important test");
+        });
+        //Use a jQuery method to remove the "important" class from a <p> element. #3
+        $(function () {
+            // $("#cssClass").removeClass("important");
+        })
+        //Use a jQuery method to toggle between adding and removing the "important" class from the <p> element on click. #4
+        $(function () {
+            $("#cssBut").click(function () {
+                // $("#cssClass").toggleClass("important");
+            })
+        })
+
+        //CSS
+
+        //Use the css() method to add a pink background color to a <p> element. #1
+        $(function () {
+            // $("#cssClass").css("background-color", "pink");
+        })
+        //Use the css() method to add a 5 pixels red dotted border to a <p> element. #2
+        $(function () {
+            // $("#cssClass").css("border", "5px red dotted");
+        })
+        //Return the background color of a <p> element. #3
+        $(function () {
+            // $("#cssClass").css("background-color");
+        })
+        //Use the css() method to set the following styles for <p>: Green background color, white text color, 25 pixels font size and a padding of 15 pixels.
+        $(function () {
+            // $("#cssClass").css({
+            //     "background-color": "green",
+            //     "color": "white",
+            //     "font-size": "25px",
+            //     "padding": "15px"
+            // });
+        });
+
+        //Dimesions
+
+        //Use jQuery methods to set the height and width of <div> to 500 pixels. #1
+        $(function () {
+            // $("#dim").height(500).width(500);
+        });
+        //Use a jQuery method to get the height of a <div> element, excluding padding, border and margin. #2
+        $(function () {
+            // $box = $("#dim").height();
+            //     console.log($box);
+        });
+        //Use a jQuery method to get the height of a <div> element, including padding (not border and margin). #3
+        $(function () {
+            // $height = $("#dim").height();
+            // $pad = $("#dim").innerHeight();
+            // console.log($height, $pad);
+        })
+        //Use a jQuery method to get the height of a <div> element, including padding and border. #4
+        $(function () {
+            //  $height = $("#dim").height();
+            // $pad = $("#dim").innerHeight();
+            // $border = $("#dim").outerHeight();
+            // console.log($height, $pad, $border);
+        });
+        //Use a jQuery method to get the height of a <div> element, including padding, border and margin. #5
+        $(function () {
+            // $height = $("#dim").height();
+            // $pad = $("#dim").innerHeight();
+            // $border = $("#dim").outerHeight();
+            // $mar = $("#dim").outerHeight(true);
+            // console.log($height, $pad, $border, $mar);
+        });
+
+        //Traversing = jQuery traversing, which means "move through", are used to "find" (or select) HTML elements based on their relation to other elements. Start with one selection and move through that selection until you reach the elements you desire.
+
+        //Use a jQuery method to get the direct parent of a <span> element. #1
+        $(function () {
+            // $parent = $("span").parent();
+            // ($parent).addClass("important");
+        });
+        //Use a jQuery method to get all ancestors of a <span> element. #2
+        $(function (){
+            // $parent = $("span").parents();
+            // ($parent).addClass("important");
+        });
+        //Use a jQuery method to get all direct children of a <div> element. #3
+        $(function (){
+            // $child = $("#spanTran").children();
+            // ($child).addClass("important");
+        });
+        //Use a jQuery method to get all <span> elements that are descendants of <div>. #4
+        $(function (){
+            // $("#spanTran").find("#sentTran").css({"color": "red", "border": "2px solid red"});
+        });
+        //Use a jQuery method to get all siblings elements of an <h2> element. #5
+        $(function (){
+            // $("#spanTran").siblings().css({"color": "red", "border": "2px solid red"});
+        })
+        //Use a jQuery method to get the first <div> element in the document. #6
+        $(function (){
+            // $("div").first().css({"color" : "red", "border": "2px solid red"});
+        })
+
+
+
+
+
+    </script>
+    <style>
+        .important {
+            color: orange;
+        }
+
+        .test {
+            font-size: 45px;
+        }
+
+        #dim {
+            background-color: blue;
+            height: 200px;
+            padding: 10px 15px 20px 30px;
+            border: 1px dotted red;
+            margin: 14px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="spanTran"> hey girl! whats up
+        <p id="spanPar">Traversing sentence here we go...
+            <br>
+            <span id="sentTran">
+                happy halloween!
+            </span>
+        </p>
+    </div>
+    <br>
+    <div id="dim"></div>
+    <br>
+    <p id="cssClass">Hey I'm testing Css Classes</p>
+    <button id="cssBut">Css Change</button>
+    <br>
+    <div id="test1">Heyyyyy</div>
+    <div id="demo1">hiiiiiii</div>
+    <br>
+    <div id="removeCon">
+        <p id="removeTxt">Hello there</p>
+        <p id="removeTxt2">Whats up!!</p>
+    </div>
+    <br>
+    <p id="addJS">Hey there!! </p>
+    <br>
+    <p><a href="https://www.w3schools.com" id="w3s">W3Schools.com</a></p>
+
+    <button id="setFour">Change href and title</button>
+
+    <br>
+    <img id="setImg"
+        src="https://media.istockphoto.com/photos/collection-of-miniature-pumpkins-in-wooden-crate-with-grateful-for-picture-id1272718036?b=1&k=20&m=1272718036&s=170667a&w=0&h=5g5MoReeBiP0RG9iOUkQkoL3ukOGGYP71lhdsRn6kSY=">
+    <br>
+    <div id="set">Hey there!!!</div>
+    <br>
+    <p><a href="https://www.w3schools.com" id="w3s">W3Schools.com</a></p>
+
+    <button id="w3But">Show href Value</button>
+    <br>
+    <p>Name: <input type="text" id="valTest" value="Mickey Mouse"></p>
+
+    <button id="valBut">Show Value</button>
+
+    <br>
+    <button id="get">get</button>
+    <div id="getText" style="display: none;">Hi</div>
+    <br>
+    <button id="stop">STOP</button>
+    <div id="divStop" style="width:100px;height:100px;background-color:peru;display:none;position:relative;">Hello
+        World!!! My name is Anahita!</div>
+    <button id="continue">Click to Slide Down</button>
+    <div id="animateText" style="width:100px;height:100px;background-color:pink;">This text will animate with font-size
+        set to 100</div>
+    <button id="animate">Animate Button</button>
+    <br>
+    <div id="div3" style="width:80px;height:80px;background-color:green;position:relative;"></div>
+    <br>
+    <button id="slide">Slide Button</button>
+    <div id="div2" style="width:80px;height:80px;background-color:blue;display:none;"></div>
+    <br>
+    <button id="fade">Fade Button</button>
+    <div id="div1" style="width:80px;height:80px;background-color:red;"></div>
+    <br>
+    <button id="toggle">Toggle</button>
+    <p class="toggle">Toggle will hide and show this element.</p>
+    <button id="hide">Hide</button>
+    <p class="hideShow">Click "Hide" and I vanish. Click "Show" and I appear!! ;)</p>
+    <button id="show">Show</button>
+    <p>hi</p>
+    <p>This is another paragraph.</p>
+    <p class="classTest">This is an element with a class</p>
+    <p id="test">This is an element with id</p>
+    <p><a href="https://www.w3schools.com/html/">HTML Tutorial</a></p>
+    <p><a href="https://www.w3schools.com/css/">CSS Tutorial</a></p>
+
+    <table border="1">
+        <tr>
+            <th>Company</th>
+            <th>Country</th>
+        </tr>
+        <tr>
+            <td>Alfreds Futterkiste</td>
+            <td>Germany</td>
+        </tr>
+        <tr>
+            <td>Berglunds snabbköp</td>
+            <td>Sweden</td>
+        </tr>
+        <tr>
+            <td>Centro comercial Moctezuma</td>
+            <td>Mexico</td>
+        </tr>
+        <tr>
+            <td>Ernst Handel</td>
+            <td>Austria</td>
+        </tr>
+        <tr>
+            <td>Island Trading</td>
+            <td>UK</td>
+        </tr>
+    </table>
+
+    Name: <input type="text" name="fullname"><br>
+    Email: <input type="text" name="email">
+
+
+    <button>click click!!</button>
+</body>
+
+</html>

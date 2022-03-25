@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>W3Schools JS Exercises</title>
+    <script>
+        //JS Variables
+
+        //Create a variable called carName, assign the value Volvo to it. #1
+        // var carName = "Volvo";
+        // console.log(carName);
+
+        //Create a variable called x, assign the value 50 to it. #2
+        // var x = 50;
+        // console.log(x);
+
+        //Display the sum of 5 + 10, using two variables: x and y.
+        // var x = 5;
+        // var y = 10;
+        // window.onload = function (){
+        //     document.getElementById("demo").innerHTML = x + y;
+        // }
+
+        //Create a variable called z, assign x + y to it, and display the result in an alert box. #3
+        // var x = 5;
+        // var y = 10;
+        // var z = x + y;
+        // alert(z);
+
+        //On one single line, declare three variables with the following names and values: #4
+        //firstName = "John"
+        //lastName = "Doe"
+        //age = 35
+        // var firstName = "John", lastName = "Doe", age = 35;
+        // console.log(firstName, lastName, age);
+
+        //Multiply 10 with 5, and alert the result: #1
+        // alert (10 * 5);
+
+        //Divide 10 by 2, and alert the result: #2
+        // alert(10/2);
+
+        //Alert the remainder when 15 is divided by 9. #3
+        // alert(15 % 9);
+
+        //Use the correct assignment operator that will result in x being 15 (same as x = x + y). #4
+        // x = 10;
+        // y = 5;
+        // x += y;
+        // var z = x += y;
+        // console.log(z);
+
+        //Use the correct assignment operator that will result in x being 50 (same as x = x * y). #5
+        // x = 10;
+        // y = 5;
+        // x *= y;
+        // var z = x *= y;
+        // console.log(z);
+
+        //Use comments to describe the correct data type of the following variables: #1
+        // let length = 16;          // Number
+        // let lastName = "Johnson"; // String
+
+        // const x = {
+        //     firstName: "John",
+        //     lastName: "Doe"
+        // };                        // Object
+
+
+        //JS Functions
+
+        //Execute the function named myFunction. #1
+        // function myFunction() {
+        //     alert("Hello World!");
+        // }
+        // myFunction();
+
+        //Create a function called "myFunction". #2
+        // function myFunction(){
+        //     alert ('Hello World!');
+        // }
+        // myFunction();
+
+        //Make the function return "Hello". #3
+        // window.onload = function () {
+        //     function myFunction() {
+        //         return "Hello";
+        //     }
+        //     document.getElementById("demo").innerHTML = myFunction();
+        // }
+
+        //Make the function display "Hello" in the inner HTML of an element with the ID "demo". #4
+        // window.onload = function () {
+        //     function myFunction() {
+        //         document.getElementById("demo").innerHTML = "Hello";
+        //     }
+        //     myFunction();
+        // }
+
+        //JS Objects
+
+        //Alert "John" by extracting information from the person object. #1
+        // const person = {
+        //     firstName: "John",
+        //     lastName: "Doe"
+        // };
+        // alert(person.firstName);
+
+        //Add the following property and value to the person object: country: Norway. #2
+        // const person = {
+        //     firstName: "John",
+        //     lastName: "Doe",
+        //     country: "Norway"
+        // };
+        // alert(person.country);
+
+        //Create an object called person with name = John, age = 50. Then, access the object to alert("John is 50"). #3
+        // const person = {
+        //     name: "John", age: 50
+        // };
+        // alert(person.name + " is " + person.age);
+
+        //JS Events
+
+        //The <button> element should do something when someone clicks on it. Try to fix it! #1
+        // <button onclick="alert('Hello')">Click me.</button>
+
+        //When the button is clicked, the function "myFunction" should be executed. #2
+        // <button onclick="myFunction()">click me.</button>
+
+        //The <div> element should turn red when someone moves the mouse over it. #3
+        // <div onmouseover="this.style.backgroundColor='red'">myDIV.</div>
+
+
+        //JS Strings
+
+        //Use the length property to alert the length of txt. #1
+        // let txt = "Hello World!";
+        // let x = txt.length;
+        // alert(x);
+
+        //Use escape characters to alert We are "Vikings". #2
+        // let txt = "We are \"Vikings\"";
+        // alert(txt);
+
+        //Concatenate the two strings to alert "Hello World!". #3
+        // let str1 = "Hello ";
+        // let str2 = "World!";
+        // alert(str1 + str2);
+
+
+        //JS String Methods
+
+        //Convert the text into an UPPERCASE text: #1
+        // let txt = "Hello World!";
+        // txt = txt.toUpperCase();
+        // alert(txt);
+
+        //Use the slice method to return the word "bananas". #2
+        // let txt = "I can eat bananas all day";
+        // let x = txt.slice(10, 17);
+        // alert(x);
+
+        //Use the correct String method to replace the word "Hello" with the word "Welcome". #3
+        // let txt = "Hello World";
+        // txt = txt.replace("Hello", "Welcome");
+        // alert(txt);
+
+        //Convert the value of txt to upper case. #4
+        // let txt = "Hello World";
+        // txt = txt.toUpperCase();
+        // alert(txt);
+
+        //Convert the value of txt to lower case. #5
+        // let txt = "Hello World";
+        // txt = txt.toLowerCase();
+        // alert(txt);
+
+        //JS Arrays
+
+        //Get the value "Volvo" from the cars array.
+        // const cars = ["Saab", "Volvo", "BMW"];
+        // let x = cars[1];
+        // alert(x);
+
+        //Change the first item of cars to "Ford". #2
+        // const cars = ["Volvo", "Jeep", "Mercedes"];
+        // cars[0] = "Ford";
+        // alert(cars[0]);
+
+        //Alert the number of items in an array, using the correct Array property. #3
+        // const cars = ["Volvo", "Jeep", "Mercedes"];
+        // alert(cars.length);
+
+        //JS Array Methods
+
+        //Use the correct Array method to remove the last item of the fruits array. #1
+        // const fruits = ["Banana", "Orange", "Apple"];
+        // let x = fruits.pop();
+        // alert(x);
+
+        //Use the correct Array method to add "Kiwi" to the fruits array. #2
+        // const fruits = ["Banana", "Orange", "Apple"];
+        // fruits.push("Kiwi");
+        // alert(fruits);
+
+        //Use the splice() method to remove "Orange" and "Apple" from fruits. #3
+        // const fruits = ["Banana", "Orange", "Apple", "Kiwi"];
+        // fruits.splice(1, 2);
+        // alert(fruits);
+
+
+        //JS Array Sort
+
+        //Use the correct Array method to sort the fruits array alphabetically.
+        // const fruits = ["Banana", "Orange", "Apple", "Kiwi"];
+        // fruits.sort();
+        // alert(fruits);
+
+
+        //JS Dates
+        //Create a Date object and alert the current date and time. #1
+        // const d = new Date();
+        // alert(d);
+
+        //Use the correct Date method to extract the year (four digits) out of a date object. #2
+        // const d = new Date();
+        // year = d.getFullYear();
+        // alert(year);
+
+        //Use the correct Date method to get the month (0-11) out of a date object. #3
+        // const d = new Date();
+        // month =  d.getMonth();
+        // alert(month);
+
+        //Use the correct Date method to set the year of a date object to 2020. #4
+        // const d = new Date();
+        // d.setFullYear(2020)
+        // alert(d);
+
+
+        //JS Math
+
+        //Use the correct Math method to create a random number. #1
+        // let r = Math.random();
+        // alert(r);
+
+        //Use the correct Math method to return the largest number of 10 and 20. #2
+        // let x = Math.max(10, 20);
+        // alert(x);
+
+        //Use the correct Math method to round a number to the nearest integer. #3
+        // let x = Math.round(5.3);
+        // alert(x);
+
+        //Use the correct Math method to get the square root of 9.
+        // let x = Math.sqrt(9);
+        // alert(x);
+
+
+        //JS Comparisons
+
+        //Choose the correct comparison operator to alert true, when x is greater than y. #1
+        // x = 10;
+        // y = 5;
+        // alert(x > y);
+
+        //Choose the correct comparison operator to alert true, when x is equal to y. #2
+        // x = 10;
+        // y = 10;
+        // alert(x == y);
+
+        //Choose the correct comparison operator to alert true, when x is NOT equal to y. #3
+        // x = 10;
+        // y = 5;
+        // alert(x != y);
+
+        //Choose the correct conditional (ternary) operator to alert "Too young" if age is less than 18, otherwise alert "Old enough". #4
+        // var age = n;
+        // var voteable = (age < 18) ? "Too young" : "Old enough";
+        // alert(voteable);
+
+
+        //JS Conditions
+
+        //Fix the if statement to alert "Hello World" if x is greater than y. #1
+        // if (x > y) {
+        // alert("Hello World");
+        // }
+
+        //Fix the if statement to alert "Hello World" if x is greater than y, otherwise alert "Goodbye". #2
+        // if (x > y) {
+        //     alert("Hello World");
+        // } else {
+        //     alert("Goodbye");
+        // }
+
+
+        //JS Switch
+
+        //Create a switch statement that will alert "Hello" if fruits is "banana", and "Welcome" if fruits is "apple". #1
+        // switch
+        // (fruits) {
+
+        //     case
+        //         "Banana":
+        //         alert("Hello")
+        //         break;
+
+        //     case
+        //         "Apple":
+        //         alert("Welcome")
+        //         break;
+        // }
+
+        //Add a section that will alert("Neither") if fruits is neither "banana" nor "apple". #2
+        // switch (fruits) {
+        //     case "Banana":
+        //         alert("Hello")
+        //         break;
+        //     case "Apple":
+        //         alert("Welcome")
+        //         break;
+        //     default:
+        //         alert("Neither");
+        // }
+
+
+        //For Loops
+
+        //Create a loop that runs from 0 to 9. #1
+        // let i;
+        // for (i=0; i <10; i++){
+        //     console.log(i);
+        // }
+
+        //Create a loop that runs through each item in the fruits array. #2
+        // const fruits = ["Apple", "Banana", "Orange"];
+        // for(x of fruits){
+        //     console.log(x);
+        // }
+
+
+        //JS While Loops
+
+        //Create a loop that runs as long as i is less than 10. #1
+        // let i = 0;
+        // while (i < 10){
+        //     console.log(i);
+        //     i++
+        // }
+
+        //Create a loop that runs as long as i is less than 10, but increase i with 2 each time. #2
+        // let i = 0;
+        // while (i < 10) {
+        //     console.log(i);
+        //     i = i + 2;
+        // }
+
+        //JS Break Loops
+
+        //Make the loop stop when i is 5. #1
+        // for (i = 0; i < 10; i++) {
+        //     console.log(i);
+        //     if (i == 5) {
+        //         break;
+        //     }
+        // }
+
+        //Make the loop jump to the next iteration when i is 5. #2
+        // for (i = 0; i < 10; i++) {
+        //     if (i == 5) {
+        //         continue;
+        //     }
+        //     console.log(i);
+        // }
+
+        //JS HTML DOM
+
+        //Use the getElementById method to find the <p> element, and change its text to "Hello". #1
+        // window.onload= function(){
+        //         document.getElementById("demo").innerHTML = "Hello";
+        // }
+
+        //Use the getElementsByTagName method to find the first <p> element, and change its text to "Hello". #2
+        // window.onload= function(){
+        //     document.getElementsByTagName("p")[0].innerHTML = "Hello";
+        // }
+
+        //Change the text of the first element that has the class name "test". #3
+        // window.onload= function(){
+        //     document.getElementsByClassName("test")[0].innerHTML = "Hello";
+        // }
+
+        //Use HTML DOM to change the value of the image's src attribute. #4
+        // window.onload= function (){
+        //     document.getElementById("image").src="https://media.istockphoto.com/photos/collection-of-miniature-pumpkins-in-wooden-crate-with-grateful-for-picture-id1272718036?b=1&k=20&m=1272718036&s=170667a&w=0&h=5g5MoReeBiP0RG9iOUkQkoL3ukOGGYP71lhdsRn6kSY=";
+        // }
+
+        //Use HTML DOM to change the value of the input field. #5
+        // window.onload = function () {
+        //     document.getElementById("myText").value = "Have a nice day!";
+        // }
+
+        //Change the text color of the <p> element to "red". #6
+            // window.onload= function (){
+            //     document.getElementById("demo").style.color="red";
+            // }
+
+    //Change the font size of the p element to 40 pixels. #7
+    // window.onload= function (){
+    //     document.getElementById("demo").style.fontSize="40px";
+    // }
+
+    //Use the CSS display property to hide the p element. #8
+    // window.onload= function (){
+    //     document.getElementById("demo").style.display="none";
+    // }
+
+    //Use the eventListener to assign an onclick event to the <button> element. #9
+        // window.onload= function(){
+        //     document.getElementById("demo1").addEventListener("click", myFunction);
+        //     function myFunction() {
+        //     alert("Hello World!");
+        // }
+        // }
+
+
+
+    </script>
+
+</head>
+
+<body>
+
+    <p id="demo">hi</p>
+    <p class="test">hi</p>
+    <p class="test">hi</p>
+    <img id="image"
+        src="https://media.istockphoto.com/photos/spooky-halloween-sky-picture-id1270121259?b=1&k=20&m=1270121259&s=170667a&w=0&h=LGJ9lGqFWSPCGUVS0hBRlTXXb_Ez2xZwWhmk5pccRZg=">
+    <br>
+    <input type="text" id="myText" value="Hello">
+    <br>
+    <button id="demo1">Click me1</button>
+    <!-- <button onclick="alert('Hello')">Click me.</button> -->
+    <!-- <div onmouseover="this.style.backgroundColor='red'">myDIV.</div> -->
+
+
+</body>
+
+</html>

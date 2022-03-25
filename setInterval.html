@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Set Interval</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+
+        // setInterval(red, 1000);
+        // function red() {
+        //     var x = document.body;
+        //     x.style.backgroundColor = "red";
+        // }
+        // setInterval(blue, 3000);
+        // function blue() {
+        //     var x = document.body;
+        //     x.style.backgroundColor = "blue";
+        // }
+
+
+        //let i = 0;
+        // let coffees = ["Cortado", "Macchiato", "Mocha", "Latte"];
+
+        // function iterateOverArray() {
+        // 	console.log(coffees[i]);
+        // 	i++;
+        // }
+
+        // window.onload = function () {
+        //     function showTime() {
+
+        //         // return new date and time
+        //         let dateTime = new Date();
+
+        //         // return the time
+        //         let time = dateTime.toLocaleTimeString();
+
+        //         console.log(time)
+        //     }
+
+        //     let display = setInterval(showTime, 1000);
+
+        // }
+
+        $(document).ready(function () {
+            $(function showTime() {
+                $dateTime = new Date();
+                //return new date and time
+                $time = $dateTime.toLocaleTimeString();
+                //return the time
+                $("#clock").html($time);
+                //JS get element by ID
+                // document.getElementById("clock").innerHTML = $time;
+                //to show on HTML page
+                setInterval(showTime, 1000);
+                //counts down the seconds
+            });
+        });
+    </script>
+    <style>
+        #clock {
+            text-align: center;
+            font-size: 80px;
+        }
+    </style>
+</head>
+
+<body>
+    #29 Set Interval JavaScript Function
+    <p id="clock"></p>
+
+
+</body>
+
+</html>

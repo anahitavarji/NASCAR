@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Logic jQuery</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <script>
+        //Extend the exercise in row no 23 to use jQuery to add some logic so that once the button is clicked, the color of the box changes every 1 or 5 sec
+        //Document ready allows us to execute a function when document is fully loaded.
+        //jQuery selector ("#btn1")
+        //Assign click event to button 
+        //Function is executed when the user clicks on the element
+        //setInterval calls the function or evaluates an expression at specified time
+
+        $(document).ready(function () {
+            $("#btn1").click(function () {
+                setInterval(function () { $("#box-1").css("background-color", "green"); }, 1000);
+                setInterval(function () { $("#box-1").css("background-color", "red"); }, 5000);
+            });
+            $("#btn2").click(function () {
+                setInterval(function () { $("#box-2").css("background-color", "orange"); }, 1000);
+                setInterval(function () { $("#box-2").css("background-color", "blue"); }, 5000);
+            });
+            $("#btn3").click(function () {
+                setInterval(function () { $("#box-3").css("background-color", "purple"); }, 1000);
+                setInterval(function () { $("#box-3").css("background-color", "yellow"); }, 5000);
+            });
+        });
+    </script>
+
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        /* original code for desktop */
+        /* .container {
+    display: flex;
+  } */
+        .container #box-1 {
+            background-color:red;
+            /* width: 75%;
+      height: 375px;     */
+        }
+
+        .container #box-2 {
+            background-color: blue;
+            /* width: 75%;
+    height: 375px; */
+        }
+
+        .container #box-3 {
+            background-color: yellow;
+            /* width: 75%;
+    height: 375px;   */
+        }
+
+        button:active {
+            background-color: lightpink;
+        }
+
+        @media only screen and (max-width: 420px) {
+            .container {
+                display: table-cell;
+                width: 75vh;
+                height: 100vh;
+            }
+
+            .container #box-1 {
+                height: 280px;
+                width: auto;
+            }
+
+            .container #box-2 {
+                height: 280px;
+                width: auto;
+            }
+
+            .container #box-3 {
+                height: 280px;
+                width: auto;
+            }
+
+            button {
+                position: absolute;
+                margin: 0 0 0 160px;
+                padding: 5px;
+                cursor: pointer;
+                white-space: nowrap;
+            }
+
+            #btn1 {
+                top: 125px;
+            }
+
+            #btn2 {
+                top: 400px;
+            }
+
+            #btn3 {
+                top: 675px;
+            }
+        }
+
+        @media only screen and (min-width: 768px) {
+            .container {
+                display: flex;
+            }
+
+            .container #box-1 {
+                height: 290px;
+                width: 100%;
+            }
+
+            .container #box-2 {
+                height: 290px;
+                width: 100%;
+            }
+
+            .container #box-3 {
+                height: 290px;
+                width: 100%;
+            }
+
+            .btnContainer {
+                display: flex;
+            }
+
+            .btnContainer button {
+                margin: 10px 95px;
+                padding: 5px;
+                cursor: pointer;
+                white-space: nowrap;
+            }
+        }
+
+        @media only screen and (min-width: 1000px) {
+            .container {
+                display: flex;
+                box-sizing: border-box;
+            }
+
+            .container #box-1 {
+                background-color:red;
+                width: 75%;
+                height: 375px;
+            }
+
+            .container #box-2 {
+                background-color: blue;
+                width: 75%;
+                height: 375px;
+            }
+
+            .container #box-3 {
+                background-color: yellow;
+                width: 75%;
+                height: 375px;
+            }
+
+            .btnContainer {
+                display: flex;
+            }
+
+            .btnContainer button {
+                padding: 5px;
+                cursor: pointer;
+                margin: 10px 265px;
+                white-space: nowrap;
+            }
+        }
+
+        /* 
+@media only screen and (min-width: 700px) {
+    .container {
+        display: block;
+        height: 200vh;
+        width: 75vh;
+    }
+    #box-1, #box-2, #box-3 {
+        height: 350px;
+        width: auto;
+    }
+    .btnContainer{
+        display: block;
+    }
+    button {
+        position: absolute;
+    }
+    .btn1 {
+        top: 125px;
+    }
+    .btn2 {
+        top: 400px;
+    }
+    .btn3{
+        top: 675px;
+    
+} */
+
+        /* @media only screen and (max-width: 768px) {
+    #box-1, #box-2, #box-3 {
+        width: 100%;
+        height: 200px;
+    }
+    .btnContainer {
+        display: flex;
+    }
+    button {
+        margin: 10px 85px;
+    }
+} */
+        /* 
+
+@media screen and (max-width: 500px) {
+    .container {
+        display: block; 
+    }
+    #box-1 {
+        height: 200px;
+    }
+    #box-2 {
+        height: 200px; 
+  }
+  #box-3 {
+    height: 200px; 
+  }
+}
+@media screen and (max-width: 760px) {
+    .container {
+        display: flex;
+       height: 200px;
+       width: 100%;
+    }
+    #box-1 {
+        width: 50%; 
+    }
+    #box-2 {
+      width: 50%;
+  }
+  #box-3 {
+      width: 50%;
+  }
+  button {
+    margin: 5px 250px;
+  }
+} */
+    </style>
+</head>
+
+
+<body>
+    <div class="container">
+        <div id="box-1">
+        </div>
+        <div id="box-2">
+        </div>
+        <div id="box-3">
+        </div>
+    </div>
+
+    <div class="btnContainer">
+        <button id="btn1">click me!</button>
+        <button id="btn2">click me!</button>
+        <button id="btn3">click me!</button>
+    </div>
+</body>
+
+</html>

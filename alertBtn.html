@@ -1,0 +1,112 @@
+<!-- //1. How to add a button? -->
+<!-- <button></button> -->
+<!-- //2. How to make the button show a message? -->
+<!-- alert(), displays text in a dialog box that pops up on screen -->
+<!-- //3. How to make the button clickable?  -->
+<!-- onclick causes the function to be called when a user clicks the button. -->
+<!-- Use CSS pseudo-classes (:hover, :focus, and :active) to make the button change its appearance when users hover over it -->
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Practice page</title>
+
+    <script>
+        function showAlert () {
+            var textAlert = "Hello World! :)"
+            alert (textAlert);
+        }
+    </script>
+    
+
+  <style>
+* {
+    margin: 0;
+    padding: 0;
+}
+.container {
+    /* height: 100px;
+    width: 100%; */
+    box-sizing: border-box;
+    display: block;
+  }
+  .box-1 {
+      background-color: red;
+      width: 100%;
+      height: 250px;    
+  }
+  .box-2 {
+    background-color: blue;
+    width: 100%;
+    height: 250px;
+}
+.box-3 {
+    background-color: green;
+    width: 100%;
+    height: 250px;  
+}
+.btn:active {
+    background-color: purple;
+}
+.btn {
+    padding: 10px;
+    cursor: pointer;
+    align-items: center;
+}
+.btnContainer {
+    display: flex;
+   justify-content: center;
+   padding: 10px;
+}
+
+@media only screen and (min-width: 768px) {
+    .container {
+        display: flex;
+    }
+    .box-1 {
+        height: 200px;
+    }
+    .box-2 {
+        height: 200px; 
+  }
+  .box-3 {
+    height: 200px; 
+  }
+}
+@media only screen and (min-width: 1000px) {
+    .container {
+        display: flex;
+       height: 200px;
+       width: 100%;
+    }
+    .box-1 {
+        width: 50%; 
+    }
+    .box-2 {
+      width: 50%;
+  }
+  .box-3 {
+      width: 50%;
+  }
+}
+  </style>
+</head>
+
+
+<body>
+<div class="container">
+    <div class="box-1">
+    </div>
+    <div class="box-2"></div>
+    <div class="box-3"></div>
+</div>
+<div class="btnContainer">
+<button class="btn" onclick="showAlert()">click me!</button>
+</div>
+</body>
+</html>

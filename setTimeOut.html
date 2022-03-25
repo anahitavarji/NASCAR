@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Set Time Out</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("button").click(function () {
+                //click event on button
+                alert("HEY! YOU ARE BEING REDIRECTED TO OUR OFFICIAL SITE..THANKS!");
+                //does alert once clicked
+                setTimeout(function () {
+                    //after alert, then redirects to new site
+                    $newSite = document.location.href = "https://www.nascar.com/";
+                    setTimeout$("newSite", 5000);
+                });
+            });
+        });
+
+
+        // window.onload = function(){
+        //     setTimeout(showAlert, 5000);
+        //     function showAlert(){
+        //         alert('Hi =)');
+        //     }
+        // }
+
+        // window.onload = function () {
+        //     setTimeout(apChange, 2000); 
+        //     function apChange(){
+        //         apples.style.color = "red";
+        //         apples.style.textDecoration = "underline";
+        //     }
+        //     setTimeout(leChange, 4000); 
+        //     function leChange(){
+        //         lemons.style.color = "yellow";
+        //         lemons.style.textDecoration = "underline overline";
+        //     }
+        //     setTimeout(blChange, 6000); 
+        //     function blChange(){
+        //         blue.style.color = "blue";
+        //         blue.style.textDecoration = "overline";
+        //     }
+        // }
+    </script>
+    <style>
+        body {
+            background-color: black;
+        }
+
+        p {
+            color: white;
+            font-size: 72px;
+            text-align: center;
+        }
+
+        button {
+            margin: 0 auto;
+            padding: 10px;
+            font-size: 18px;
+            cursor: pointer;
+        }
+
+        .container {
+            display: flex;
+        }
+    </style>
+</head>
+
+<body>
+    <p>Hey, check out more about our event on our site...</p>
+    <div class="container">
+        <button>Click Me!</button>
+    </div>
+
+    <!-- #29 Set Time Out JavaScript Function -->
+
+    <!-- <p id="apples">
+        I love apples!
+    </p>
+    <p id="lemons">
+        I love lemons!
+    </p>
+    <p id="blue">
+        I love blueberries!
+    </p> -->
+</body>
+
+</html>
